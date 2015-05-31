@@ -1,0 +1,17 @@
+<div>
+	<table class="table table-striped table-bordered table-condensed table-hover">
+		<tr>
+			<th>suplier name</th>
+			<th>suplier address</th>
+			<th>total amount</th>
+		</tr>
+		<tr ng-repeat="invoice in invoices" ng-click="insertOrEditInvoice(invoice)">
+			<td>{{invoice.suplierName}}</td>
+			<td>{{invoice.suplierAddress}}</td>
+			<td>{{invoice.totalAmount}}</td>
+		</tr>
+	</table>
+	<div>
+		<button class="btn" ng-click="insertOrEditInvoice()">new</button>
+	</div>
+</div>
